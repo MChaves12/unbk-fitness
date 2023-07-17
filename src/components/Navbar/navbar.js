@@ -30,9 +30,9 @@ function Navbar () {
                         </List>
                     </Collapse>
                 </div>
-                <a href='#'>TEAM</a>
-                <a href='#'>FAQ</a>
-                <a href='#'>MY ACCOUNT</a>
+                <p>TEAM</p>
+                <p>FAQ</p>
+                <p>MY ACCOUNT</p>
             </div>    
         </nav>
     );
