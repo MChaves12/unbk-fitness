@@ -73,7 +73,7 @@ function HomePage() {
             <h2 className="w-[470px] text-black font-sans font-extrabold text-[52px] mt-[32px]">
             UNBK PROGRAMMIMG
             </h2>
-            <p className="w-[470px] text-black text-left font-sans font-normal text-xl h-[120px] w-[580px]">
+            <p className="w-[470px] text-black text-left font-sans font-normal text-xl h-[120px]">
             Ready to work hard? Browse our programs and workouts to learn more about training with HWPO.
             </p>
             <button className="text-black font-sans font-extrabold text-xl h-[58px] w-[240px] border-2 border-black hover:bg-black hover:text-white">
@@ -86,6 +86,24 @@ function HomePage() {
                 style={{ backgroundImage: `url(${sec3Img1})` }}
                 alt="athlete resting"
             ></div>
+        </div>
+      </section>
+      <section className="h-[500px] bg-gray-200 flex flex-col items-center justify-around">
+            <h2 className="w-[470px] text-black text-center font-sans font-extrabold text-[52px] mt-[60px]">
+            STAY UPDATED
+            </h2>
+            <p className="text-black text-center font-sans font-normal text-xl">
+            Subscribe to our mailing list for the latest news and updates.
+            </p>
+        <div className=" bg-gray-300 w-[460px] h-[218px] flex-col items-center justify-around flex-wrap mb-9">
+            <form className="h-[218px] flex items-center justify-around flex-wrap">
+                <input className=" w-[218px] h-[50px] p-3 " type="text" name="name" placeholder="FIRST NAME"/>
+                <input className=" w-[218px] h-[50px] p-3 " type="text" name="last name" placeholder="LAST NAME" />
+                <input className=" w-[450px] h-[50px] p-3" type="email" name="email" placeholder="EMAIL" />
+                <button className="text-black font-sans font-extrabold text-xl h-[58px] w-[450px] border-2 border-black hover:bg-black hover:text-white">
+                    SUBSCRIBE
+                </button>
+            </form>
         </div>
       </section>
     </>
