@@ -2,6 +2,12 @@ import sec2Img1 from "../assets/images/sec2-img1.jpeg";
 import sec2Img2 from "../assets/images/sec2-img2.jpg";
 import sec2Img3 from "../assets/images/sec2-img3.jpg";
 import sec3Img1 from "../assets/images/sec3-img1.jpg";
+import logo from "../assets/images/UNBK-removebg-preview.png";
+import insta from "../assets/images/instagram.png";
+import face from "../assets/images/facebook.svg";
+import youtube from "../assets/images/youtube.png";
+import appleStore from "../assets/images/appleStore.png";
+import googlePlay from "../assets/images/googlePlay.png";
 
 function HomePage() {
   return (
@@ -70,42 +76,82 @@ function HomePage() {
       </section>
       <section className="h-[600px] bg-white flex items-center justify-around">
         <div className=" flex flex-col items-left justify-around h-[387px]">
-            <h2 className="w-[470px] text-black font-sans font-extrabold text-[52px] mt-[32px]">
+          <h2 className="w-[470px] text-black font-sans font-extrabold text-[52px] mt-[32px]">
             UNBK PROGRAMMIMG
-            </h2>
-            <p className="w-[470px] text-black text-left font-sans font-normal text-xl h-[120px]">
-            Ready to work hard? Browse our programs and workouts to learn more about training with HWPO.
-            </p>
-            <button className="text-black font-sans font-extrabold text-xl h-[58px] w-[240px] border-2 border-black hover:bg-black hover:text-white">
+          </h2>
+          <p className="w-[470px] text-black text-left font-sans font-normal text-xl h-[120px]">
+            Ready to work hard? Browse our programs and workouts to learn more
+            about training with HWPO.
+          </p>
+          <button className="text-black font-sans font-extrabold text-xl h-[58px] w-[240px] border-2 border-black hover:bg-black hover:text-white">
             VIEW PROGRAMS
-            </button>
+          </button>
         </div>
         <div>
-            <div
-                className=" w-[550px] h-[600px] bg-cover bg-right contrast-75 mr-10"
-                style={{ backgroundImage: `url(${sec3Img1})` }}
-                alt="athlete resting"
-            ></div>
+          <div
+            className=" w-[550px] h-[600px] bg-cover bg-right contrast-75 mr-10"
+            style={{ backgroundImage: `url(${sec3Img1})` }}
+            alt="athlete resting"
+          ></div>
         </div>
       </section>
       <section className="h-[500px] bg-gray-200 flex flex-col items-center justify-around">
-            <h2 className="w-[470px] text-black text-center font-sans font-extrabold text-[52px] mt-[60px]">
-            STAY UPDATED
-            </h2>
-            <p className="text-black text-center font-sans font-normal text-xl">
-            Subscribe to our mailing list for the latest news and updates.
-            </p>
+        <h2 className="w-[470px] text-black text-center font-sans font-extrabold text-[52px] mt-[60px]">
+          STAY UPDATED
+        </h2>
+        <p className="text-black text-center font-sans font-normal text-xl">
+          Subscribe to our mailing list for the latest news and updates.
+        </p>
         <div className=" bg-gray-300 w-[460px] h-[218px] flex-col items-center justify-around flex-wrap mb-9">
-            <form className="h-[218px] flex items-center justify-around flex-wrap">
-                <input className=" w-[218px] h-[50px] p-3 " type="text" name="name" placeholder="FIRST NAME"/>
-                <input className=" w-[218px] h-[50px] p-3 " type="text" name="last name" placeholder="LAST NAME" />
-                <input className=" w-[450px] h-[50px] p-3" type="email" name="email" placeholder="EMAIL" />
-                <button className="text-black font-sans font-extrabold text-xl h-[58px] w-[450px] border-2 border-black hover:bg-black hover:text-white">
-                    SUBSCRIBE
-                </button>
-            </form>
+          <form className="h-[218px] flex items-center justify-around flex-wrap">
+            <input
+              className=" w-[218px] h-[50px] p-3 "
+              type="text"
+              name="name"
+              placeholder="FIRST NAME"
+            />
+            <input
+              className=" w-[218px] h-[50px] p-3 "
+              type="text"
+              name="last name"
+              placeholder="LAST NAME"
+            />
+            <input
+              className=" w-[450px] h-[50px] p-3"
+              type="email"
+              name="email"
+              placeholder="EMAIL"
+            />
+            <button className="text-black font-sans font-extrabold text-xl h-[58px] w-[450px] border-2 border-black hover:bg-black hover:text-white">
+              SUBSCRIBE
+            </button>
+          </form>
         </div>
       </section>
+      <footer className="h-[250px]">
+        <div className="w-[465px] h-[192px] flex flex-col justify-between">
+          <img className="w-[125px] h-[56px]" src={logo} alt="Unbk logo" />
+          <div className="w-[120px] h-[32px] flex justify-around">
+            <div className="w-[32px] h-[32px] bg-cover border-2 border-black rounded-2xl">
+              <img src={insta} alt="instagram logo" />
+            </div>
+            <div className="w-[32px] h-[32px] bg-cover border-2 border-black rounded-2xl">
+              <img src={face} alt="facebook logo" />
+            </div>
+            <div className="w-[32px] h-[32px] bg-cover border-2 border-black rounded-2xl"> 
+              <img src={youtube} alt="youtube logo" />
+            </div>
+          </div>
+          <div className=" w-[315px] flex justify-between">
+            <div className="w-[150px] h-[72px] bg-cover">
+              <img src={googlePlay} alt="Google Play" />
+            </div>
+            <div className="w-[150px] h-[72px] bg-cover">
+              <img src={appleStore} alt="Apple Store" />
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
