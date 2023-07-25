@@ -128,8 +128,8 @@ function HomePage() {
           </form>
         </div>
       </section>
-      <footer className="h-[250px]">
-        <div className="w-[465px] h-[192px] flex flex-col justify-between">
+      <footer className="h-[250px] flex justify-around items-center">
+        <div className="w-[465px] h-[192px] flex flex-col justify-between px-10">
           <img className="w-[125px] h-[56px]" src={logo} alt="Unbk logo" />
           <div className="w-[120px] h-[32px] flex justify-around">
             <div className="w-[32px] h-[32px] bg-cover border-2 border-black rounded-2xl">
@@ -149,6 +149,24 @@ function HomePage() {
             <div className="w-[150px] h-[72px] bg-cover">
               <img src={appleStore} alt="Apple Store" />
             </div>
+          </div>
+        </div>
+        <div className="w-[680px] h-[120px] flex flex-col items-end px-10 mt-28">
+          <div className="w-[450px] h-[22px] flex justify-between font-extrabold">
+            <p>ABOUT</p>
+            <p>HELPDESK</p>
+            <p>ACCOUNT LOGIN</p>
+            <p>JOIN NOW</p>
+          </div>
+          <div className="w-[480px] h-[16px] flex justify-between text-xs">
+            <p>Client Terms |</p>
+            <p>Web Site Terms of Use |</p>
+            <p>Privacy Policy |</p>
+            <p>Cookie Notice |</p>
+            <p>Manage Cookies</p>
+          </div>
+          <div className="w-[480px] h-[16px] text-xs text-end">
+            <p>Copyrigth ₢ UNBK 2023. All Rights Reserved.</p>
           </div>
         </div>
       </footer>
